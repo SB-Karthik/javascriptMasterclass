@@ -1,0 +1,35 @@
+let data = [10, 20, 30, 40]
+// let sum = 0
+// for (let number of data) {
+//     sum = sum + number
+// }
+// console.log(sum)
+
+// let result = data.reduce(function (accumulated, number) {
+//     return accumulated = accumulated + number
+// }, 0)
+
+let result = data.reduce((accumulated, number) => accumulated = accumulated + number, 0)
+
+console.log(result)
+
+
+
+// Concat
+let a = [10, 20, 30]
+let b = [20, 30]
+let c = [100]
+
+let ans = a.concat(b, c)
+console.log(ans)
+console.log(a)
+
+// spread operator
+console.log([...a, ...b, ...c])
+
+
+ans.forEach(function (value, index) {
+    console.log(`${index} == ${value}`)
+})
+
+
